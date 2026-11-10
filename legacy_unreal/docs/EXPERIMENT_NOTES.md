@@ -1,0 +1,6 @@
+| Py code | json settings | remarks |
+|---------|---------------|----------|
+detect_box2.py | settings2.json | It looks good in this u use mouse to control the line like the 5m line u can crontrol using mouse, arrow keys for movement and ctrl, space for up down but then u use q e to turn and all , so controls were find but then Teh object detecion was bad even if tehre is an object like 5 m in it shopwed clear, or lelse just obstruction not even tree and all, ad also it shows id-6 randomly idk what that is, everythign else is fine... controls yes but detection no
+drone_control3.py | settings3.json | GTA-style attempt — camera-relative WASD, pynput mouse, FPV/TPV toggle. Mouse didn't work in PIE. Detection improved (filters id-6 sky). Still shows "obstacle" not object names for foliage.
+drone_control4.py | settings4.json | GTA v4 — C++ mouse orbit (CameraDirector modified), camera-relative WASD reads camera_state.txt, 5×5 seg scan for object names, auto-screenshot new objects, 4m ray stops at hit, clean output. Requires AirSim C++ rebuild (CameraDirector.h/.cpp modified). Press 4=FPV, 5=TPV.
+||||

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this project or build on its design, please cite it as below."
+type: software
+title: "UAVision: A Simulation Model for Real-Time Victim Detection and Terrain Exploration"
+abstract: >-
+  A simulation-first autonomous aerial search-and-rescue research platform.
+  The project combines Unreal Engine/AirSim for high-fidelity perception and
+  flight testing with a lightweight PyBullet curriculum for large-scale
+  reinforcement-learning experiments. It includes depth-camera and LiDAR
+  search agents, segmentation-based victim localisation, recurrent policies
+  for partial observability, and a fog-of-war terrain exploration stack.
+authors:
+  - family-names: M
+    given-names: Tharun
+    email: tharun151425@gmail.com
+    affiliation: "Independent researcher"
+repository-code: "https://github.com/Tharun151425/UAVision-A-Simulation-Model-for-Real-Time-Victim-Detection-and-Terrain-Exploration"
+url: "https://github.com/Tharun151425/UAVision-A-Simulation-Model-for-Real-Time-Victim-Detection-and-Terrain-Exploration"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-13"
+keywords:
+  - search and rescue
+  - unmanned aerial vehicle
+  - reinforcement learning
+  - AirSim
+  - PyBullet
+  - victim detection
+  - terrain exploration
+  - recurrent PPO
+  - simulation

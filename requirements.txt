@@ -1,0 +1,14 @@
+# Core scientific / reinforcement-learning stack
+numpy>=1.24,<3
+gymnasium>=0.28,<2
+stable-baselines3>=2.0,<3
+sb3-contrib>=2.0,<3
+torch>=2.0
+pybullet>=3.2.5
+matplotlib>=3.7
+tensorboard>=2.14
+Pillow>=10.0
+opencv-python>=4.8
+pygame>=2.4
+pyyaml>=6.0
+tqdm>=4.66

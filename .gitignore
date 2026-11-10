@@ -1,0 +1,161 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+myenv/
+.env
+.env.*
+!.env.example
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Training artifacts (large, reproducible)
+# ---------------------------------------------------------------------------
+tb_logs/
+tb_logs_multi/
+runs/
+logs/
+checkpoints/
+events.out.tfevents.*
+*.tfevents.*
+
+# SB3 checkpoints: keep only the curated demo model
+*.zip
+!airsim/rl_best/best_model.zip
+
+# ---------------------------------------------------------------------------
+# AirSim / Unreal Engine build output and proprietary assets
+# ---------------------------------------------------------------------------
+*.uproject
+*.uasset
+*.umap
+*.sln
+*.suo
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.VC.db
+*.VC.opendb
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+Content/
+Plugins/
+Unreal/
+AirSim/
+!airsim/
+!airsim/**
+AirLib/
+MavLinkCom/
+DroneServer/
+DroneShell/
+Unity/
+external/
+docs/_build/
+pipelines/
+azure/
+docker/
+cmake/
+Examples/
+HelloCar/
+HelloDrone/
+HelloSpawnedDrones/
+LogViewer/
+PX4Scripts/
+ros/
+ros2/
+SGM/
+tools/
+GazeboDrone/
+AirLibUnitTests/
+
+# Local simulator / project dumps
+AirSimCodesv1/
+UAVision-main/
+OLD_unreal/
+Testing/
+terminal.txt
+drone_*_run*.txt
+drone_full_*_run.txt
+new_rl_1.txt
+drone_rl_*.txt
+walkthrough_rl
+walkthroughexit
+task_rl
+taskexit
+prompt.md
+prompt.txt
+IMPLEMENT.md
+implementation_plan*
+RL_implementation.md
+verify_phase1_gru.py
+verify.bat
+
+# ---------------------------------------------------------------------------
+# Runtime output
+# ---------------------------------------------------------------------------
+detected_objects/
+camera_state.txt
+*.log
+*.mp4
+*.avi
+*.mov
+*.wav
+*.npy
+*.npz
+!airsim/rl_best/evaluations.npz
+!legacy_unreal/sample_outputs/*.npy
+
+# OS metadata
+$RECYCLE.BIN/
+System Volume Information/

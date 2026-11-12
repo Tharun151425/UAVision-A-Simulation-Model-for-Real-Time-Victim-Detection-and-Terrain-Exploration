@@ -43,7 +43,7 @@ class FogOfWarMap:
     def visit(self, x: float, y: float) -> bool:
         """Mark current cell as visited. Returns True if it was unknown."""
         cx, cy = self.world_to_cell(x, y)
-        was_unknown      = (self.grid[cy][cx] == -1)
+        was_unknown      = bool(self.grid[cy][cx] == -1)
         self.grid[cy][cx] = 0
         return was_unknown
 

@@ -1,0 +1,64 @@
+{
+    "SeeDocsAt": "https://microsoft.github.io/AirSim/settings/",
+    "SettingsVersion": 1.2,
+    "SimMode": "Multirotor",
+    "ClockSpeed": 3.0,
+    "ViewMode": "SpringArmChase",
+    "CameraDefaults": {
+        "CaptureSettings": [
+            { "ImageType": 0, "Width": 128, "Height": 96, "FOV_Degrees": 90 },
+            { "ImageType": 5, "Width": 32, "Height": 8, "FOV_Degrees": 90 },
+            { "ImageType": 2, "Width": 128, "Height": 96, "FOV_Degrees": 90 }
+        ]
+    },
+    "Vehicles": {
+        "Drone1": {
+            "VehicleType": "SimpleFlight",
+            "AutoCreate": true,
+            "EnableTrace": true,
+            "Sensors": {
+                "FrontLidar": {
+                    "SensorType": 6,
+                    "Enabled": true,
+                    "NumberOfChannels": 1,
+                    "RotationsPerSecond": 10,
+                    "Range": 50,
+                    "PointsPerSecond": 1000,
+                    "X": 0.5, "Y": 0, "Z": 0,
+                    "Roll": 0, "Pitch": 0, "Yaw": 0,
+                    "VerticalFOVUpper": 0,
+                    "VerticalFOVLower": 0,
+                    "HorizontalFOVStart": -2,
+                    "HorizontalFOVEnd": 2,
+                    "DrawDebugPoints": true,
+                    "DataFrame": "SensorLocalFrame"
+                },
+                "SurroundLidar": {
+                    "SensorType": 6,
+                    "Enabled": true,
+                    "NumberOfChannels": 16,
+                    "RotationsPerSecond": 10,
+                    "Range": 30,
+                    "PointsPerSecond": 100000,
+                    "X": 0, "Y": 0, "Z": -1,
+                    "Roll": 0, "Pitch": 0, "Yaw": 0,
+                    "VerticalFOVUpper": -15,
+                    "VerticalFOVLower": -25,
+                    "HorizontalFOVStart": -180,
+                    "HorizontalFOVEnd": 180,
+                    "DrawDebugPoints": false,
+                    "DataFrame": "SensorLocalFrame"
+                },
+                "FrontDistance": {
+                    "SensorType": 5,
+                    "Enabled": true,
+                    "MinDistance": 0.2,
+                    "MaxDistance": 50,
+                    "X": 0.5, "Y": 0, "Z": 0,
+                    "Yaw": 0, "Pitch": 0, "Roll": 0,
+                    "DrawDebugPoints": true
+                }
+            }
+        }
+    }
+}

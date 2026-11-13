@@ -45,9 +45,9 @@ The workflow is:
 
 Files involved:
 
-- [AirSim/PythonClient/multirotor/rl_drone_env.py](AirSim/PythonClient/multirotor/rl_drone_env.py) — environment definition, sensor logic, rewards, step/reset logic
-- [AirSim/PythonClient/multirotor/rl_train.py](AirSim/PythonClient/multirotor/rl_train.py) — training loop, DQN setup, model saving/resume
-- [AirSim/PythonClient/multirotor/rl_play.py](AirSim/PythonClient/multirotor/rl_play.py) — runs the trained model in demo mode
+- [../rl_drone_env.py](../rl_drone_env.py) — environment definition, sensor logic, rewards, step/reset logic
+- [../rl_train.py](../rl_train.py) — training loop, DQN setup, model saving/resume
+- [../rl_play.py](../rl_play.py) — runs the trained model in demo mode
 
 ---
 
@@ -69,7 +69,7 @@ In an interview, this is a good project to describe as: "I built a reinforcement
 
 ### 4.1 File purpose
 
-The main file [AirSim/PythonClient/multirotor/rl_drone_env.py](AirSim/PythonClient/multirotor/rl_drone_env.py) defines the Gymnasium environment for the drone. In RL, an environment is the simulation world the agent interacts with.
+The main file [../rl_drone_env.py](../rl_drone_env.py) defines the Gymnasium environment for the drone. In RL, an environment is the simulation world the agent interacts with.
 
 The environment defines:
 
@@ -373,7 +373,7 @@ This ensures each episode starts in a valid and fresh state.
 
 ## 5. Training file: DQN logic
 
-The file [AirSim/PythonClient/multirotor/rl_train.py](AirSim/PythonClient/multirotor/rl_train.py) is where the model is actually trained.
+The file [../rl_train.py](../rl_train.py) is where the model is actually trained.
 
 ### 5.1 Why DQN?
 
@@ -511,7 +511,7 @@ The model repeatedly:
 
 ## 6. Demo file: inference and live rendering
 
-The file [AirSim/PythonClient/multirotor/rl_play.py](AirSim/PythonClient/multirotor/rl_play.py) loads a trained model and shows the drone acting autonomously.
+The file [../rl_play.py](../rl_play.py) loads a trained model and shows the drone acting autonomously.
 
 This is used for:
 

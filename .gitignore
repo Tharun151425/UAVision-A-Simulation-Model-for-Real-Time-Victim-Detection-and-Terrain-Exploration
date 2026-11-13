@@ -159,3 +159,9 @@ camera_state.txt
 # OS metadata
 $RECYCLE.BIN/
 System Volume Information/
+
+# ---------------------------------------------------------------------------
+# Re-assert cache ignores after the source-tree allowlist exceptions above
+# ---------------------------------------------------------------------------
+**/__pycache__/
+**/*.py[cod]

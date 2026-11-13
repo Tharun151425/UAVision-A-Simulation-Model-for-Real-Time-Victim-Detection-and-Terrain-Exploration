@@ -93,7 +93,7 @@ Cubes act as random obstacles. The code scatters them randomly each episode.
 ### Training (Single Cone) — Find 1 Person
 
 ```bash
-cd AirSim/PythonClient/multirotor
+cd airsim
 python rl_train.py
 ```
 

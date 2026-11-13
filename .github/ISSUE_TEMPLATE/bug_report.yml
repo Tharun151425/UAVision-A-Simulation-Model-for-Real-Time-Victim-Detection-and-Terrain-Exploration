@@ -1,0 +1,82 @@
+name: Bug report
+description: Report a reproducible problem with the simulation, training code, or documentation.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please do not include
+        secrets, API keys, or personal information. For security issues, use the
+        process in SECURITY.md instead.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear, concise description of the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact command, branch, and commit if possible.
+      placeholder: |
+        1. Checkout commit ...
+        2. Run `python scripts/smoke_test.py`
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or traceback
+      description: Paste the smallest useful excerpt. Do not include secrets.
+      render: shell
+    validations:
+      required: false
+
+  - type: dropdown
+    id: stack
+    attributes:
+      label: Stack
+      options:
+        - PyBullet curriculum
+        - AirSim / Unreal
+        - Training or evaluation
+        - Documentation
+        - CI / packaging
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Python, OS, PyBullet, Gymnasium, Stable-Baselines3, AirSim, Unreal.
+      placeholder: "Python 3.12, Windows 11, PyBullet 3.2.7, SB3 2.9.0, AirSim 1.8.1"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I am using a clean virtual environment.
+          required: true
+        - label: This report does not contain secrets or personal data.
+          required: true

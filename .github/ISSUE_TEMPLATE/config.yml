@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup and troubleshooting
+    url: https://github.com/Tharun151425/UAVision-A-Simulation-Model-for-Real-Time-Victim-Detection-and-Terrain-Exploration/blob/main/docs/SETUP.md
+    about: Check the setup guide before opening an issue.
+  - name: Security policy
+    url: https://github.com/Tharun151425/UAVision-A-Simulation-Model-for-Real-Time-Victim-Detection-and-Terrain-Exploration/blob/main/SECURITY.md
+    about: Report vulnerabilities privately, not in a public issue.

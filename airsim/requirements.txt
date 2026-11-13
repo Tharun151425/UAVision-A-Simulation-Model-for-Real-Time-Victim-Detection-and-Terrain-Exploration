@@ -8,7 +8,7 @@ backports.ssl_match_hostname==3.7.0.1
 tornado==4.5.3
 
 keyboard==0.13.5
-numpy>=1.24,<3
+numpy>=2.5.4,<3
 opencv-contrib-python>=4.8
 Pillow>=10.0
 pygame>=2.4

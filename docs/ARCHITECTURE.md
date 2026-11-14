@@ -170,11 +170,12 @@ UAVision/
 - The full AirSim source clone, AirLib, MavLinkCom, and simulator binaries.
 - Virtual environments, TensorBoard event files, training checkpoints, and
   multi-gigabyte logs.
-- Raw video captures. See [`docs/media/README.md`](media/README.md).
+- Raw simulator captures and large video sources; curated media is stored in
+  [`docs/media/`](media/).
 
-The repository is meant to be usable from the code layer. You provide the
-simulator; the project provides the environments, training code, configuration,
-and documentation.
+The repository is designed to be used from the code layer. The simulator is
+supplied locally; the project provides the environments, training code,
+configuration, and documentation.
 
 ---
 

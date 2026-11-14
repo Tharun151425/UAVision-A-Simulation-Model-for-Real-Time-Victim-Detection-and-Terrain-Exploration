@@ -33,7 +33,7 @@ See [`docs/ROADMAP.md`](docs/ROADMAP.md).
 - Lightweight smoke test for observation contracts.
 - Architecture, setup, results, literature survey, and roadmap documents.
 - SVG architecture and timeline diagrams.
-- Screenshot drop zone with labelled placeholders and capture guidance.
+- Demonstration video and environment captures for the AirSim stack.
 - GitHub Actions smoke workflow.
 - Issue templates, pull-request template, security policy, and contribution
   guide.

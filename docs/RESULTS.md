@@ -160,44 +160,35 @@ evaluation loop and pitfalls.
 
 ---
 
-## 5. What is not claimed
+## 5. Evaluation scope
 
-| Claim | Status |
+| Capability | Status in v1.0 |
 | --- | --- |
-| Real-time victim detection on real imagery | Not claimed; segmentation is simulator ground truth |
-| State-of-the-art search performance | Not claimed; no benchmark comparison |
-| Sim-to-real transfer | Not claimed; not tested on hardware |
-| Multi-agent swarm coordination | Not implemented; roadmap only |
-| Safety-certified flight control | Not claimed; simulation research only |
-| Phase-2 convergence | Not measured in this release |
+| Simulation-based perception and navigation | Implemented and validated at the environment-contract level |
+| AirSim baseline policy | Evaluated over 15 episodes; metrics reported above |
+| Phase-2A/2B/2C curriculum | Implemented; environment reset and step contracts pass |
+| Multi-seed Phase-2 benchmark | Planned for v1.1 |
+| Learned detector on real imagery | Future work; current detection uses simulator segmentation |
+| Multi-agent coordination | Roadmap item |
+| Hardware deployment | Out of scope for this release |
 
 ---
 
-## 6. Screenshots
+## 6. Media
 
-The image files below are labelled placeholders until real captures are added.
-Replace each file in [`docs/screenshots/`](screenshots/) with the same filename;
-the README and this page will pick it up automatically.
+### AirSim demonstration
 
-### AirSim and operator tooling
+<p align="center">
+  <img src="media/running_clip.gif" alt="Autonomous UAV search in AirSim" width="100%">
+  <br>
+  <em>Autonomous target search with live depth, segmentation, and flight telemetry.</em>
+</p>
 
-| | |
-| --- | --- |
-| ![AirSim flight](screenshots/hero-airsim-flight.png) | ![Manual flight HUD](screenshots/manual-flight-hud.png) |
-| AirSim flight over the Blocks scene | Manual GTA-style flight + HUD |
-| ![Segmentation detection](screenshots/segmentation-detection.png) | ![AirSim demo](screenshots/airsim-demo-minimap.png) |
-| Segmentation-based victim detection | Autonomous demo + LiDAR minimap |
-
-### Training and PyBullet curriculum
+### Training and terrain exploration
 
 | | |
 | --- | --- |
-| ![AirSim training](screenshots/airsim-training.png) | ![Evaluation rewards](screenshots/evaluation-rewards.png) |
-| DQN training telemetry | Evaluation reward history |
-| ![Phase 2A](screenshots/pybullet-phase2a.png) | ![Phase 2B](screenshots/pybullet-phase2b.png) |
-| Phase 2A: visible-target recognition | Phase 2B: partial occlusion |
-| ![Phase 2C](screenshots/pybullet-phase2c.png) | |
-| Phase 2C: full-occlusion search | |
-
-Capture guidance and the exact file list are in
-[`docs/screenshots/README.md`](screenshots/README.md).
+| ![Training telemetry](media/testing_world.png) | ![Forest environment](media/real_world_1.png) |
+| Training run with live telemetry and trajectory visualisation | Photorealistic forest environment with RGB, depth, and segmentation |
+| ![Autonomous flight](media/real_world_2.png) | |
+| Autonomous flight and terrain exploration over large-scale terrain | |

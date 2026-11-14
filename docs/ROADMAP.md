@@ -59,7 +59,7 @@ reproduce from a clean checkout and the recorded commands.
 - [ ] Add frame stacking or a recurrent policy for temporal depth.
 - [ ] Evaluate across scene layouts, not just the Blocks map.
 - [ ] Add a deterministic demo mode with fixed seeds.
-- [ ] Record a short demo clip and link it from `docs/media/`.
+- [x] Publish a demonstration clip in `docs/media/`.
 
 **Definition of done:** a policy that reliably reaches the target in the Blocks
 scene across multiple seeds, with a documented failure rate.
